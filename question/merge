@@ -13,3 +13,4 @@ data=pd.merge(data2,data1,left_on='question_id',right_on='question_id',how='left
 
 print(data.head())
 data.to_csv('F:/chat_history/111111.csv')
+

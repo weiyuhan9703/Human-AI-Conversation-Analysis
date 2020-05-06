@@ -60,3 +60,4 @@ print(df.head())
 
 groups=df.groupby(['DATE']).count()
 print(groups)
+

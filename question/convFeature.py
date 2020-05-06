@@ -89,3 +89,4 @@ plt.xticks(rotation=45)
 plt.legend(loc="upper left")
 plt.savefig("C:/Users/Iris/Desktop/a.jpg")
 plt.show()
+

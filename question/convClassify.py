@@ -53,3 +53,4 @@ plt.axis('equal')
 plt.legend(loc='upper right')
 plt.savefig('C:/Users/Iris/Desktop/classify.png', dpi=600)
 plt.show()
+

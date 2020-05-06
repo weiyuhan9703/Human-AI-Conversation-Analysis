@@ -61,3 +61,4 @@ def DataFitAndVisualization(X, Y):
 if __name__ == "__main__":
     X, Y = DataGenerate()
     DataFitAndVisualization(X, Y)
+

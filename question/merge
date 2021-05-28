@@ -1,0 +1,15 @@
+import pandas as pd
+pd.set_option('display.width', None)
+from pandas import DataFrame, Series
+
+
+data1 = pd.read_csv('F:/chat_history/merge1_copy2.csv',dtype={'question_id':float,'answer_text':str,'type':str,'session_id':str,'question_text':str,'coefficient':float,'classify':str,'score':float})
+data1.columns=['question_id','answer_text','type','session_id','question_text','coefficient','classify','score']
+data1 = DataFrame(data1)
+data2 = pd.read_csv('F:/chat_history/1111.csv',dtype={'question_id': float,'counts':float})
+data2.columns=['question_id','counts']
+data2 = DataFrame(data2)
+data=pd.merge(data2,data1,left_on='question_id',right_on='question_id',how='left')
+
+print(data.head())
+data.to_csv('F:/chat_history/111111.csv')
